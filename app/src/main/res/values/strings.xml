@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Park A Lot</string>
+    <string name="park_list">Parks List</string>
+    <string name="txt_view_lat">Latitude</string>
+    <string name="txt_view_lon">Longitude</string>
+    <string name="txt_view_alt">Altitude</string>
+    <string name="btn_loc_gps">Get location</string>
+    <string name="btn_list">List</string>
+    <string name="btn_map">Map</string>
+    <string name="btn_add">Add park</string>
+</resources>

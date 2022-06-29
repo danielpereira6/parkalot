@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ParkALot" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_main</item>
+        <item name="colorPrimaryDark">@color/grey_3</item>
+        <item name="colorAccent">@color/grey_1</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

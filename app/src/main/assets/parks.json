@@ -1,0 +1,82 @@
+[
+	{
+		"id": 1,
+		"img": "https://imgur.com/yBEz5mr",
+		"name": "Parque ESTGA",
+		"coords": {
+			"lat": 40.5745066,
+			"long": -8.4438357
+		},
+		"area": {
+			"value": 24,
+			"units": "km"
+		},
+		"slots": 40,
+		"schedule": "9h - 21h",
+		"type": "privado"
+	},
+	{
+		"id": 2,
+		"img": "https://imgur.com/MHwDnzU",
+		"name": "Parque UA",
+		"coords": {
+			"lat": 40.5974798,
+			"long": -8.674081
+		},
+		"area": {
+			"value": 30,
+			"units": "km"
+		},
+		"slots": 40,
+		"schedule": "8h - 20h",
+		"type": "privado"
+	},
+	{
+		"id": 3,
+		"img": "",
+		"name": "Teste 2",
+		"coords": {
+			"lat": 40.03,
+			"long": -8.03
+		},
+		"area": {
+			"value": 50,
+			"units": "km"
+		},
+		"slots": 200,
+		"schedule": "24h",
+		"type": "publico"
+	},
+	{
+		"id": 4,
+		"img": "",
+		"name": "Estacionamento do Mercado (Agitagueda)",
+		"coords": {
+			"lat": 40.5710969,
+			"long": -8.5046622
+		},
+		"area": {
+			"value": 30,
+			"units": "km"
+		},
+		"slots": 40,
+		"schedule": "24h",
+		"type": "publico"
+	},
+	{
+		"id": 5,
+		"img": "",
+		"name": "Parque Teste",
+		"coords": {
+			"lat": 40.01,
+			"long": -8.22
+		},
+		"area": {
+			"value": 30,
+			"units": "km"
+		},
+		"slots": 40,
+		"schedule": "24h",
+		"type": "publico"
+	}
+]
