@@ -110,10 +110,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         //LatLng ESTGA = new LatLng(40.5745066,-8.4438357);
         //Marker marker_estga;
         // Add a marker on the map coordinates.
-        /*marker_estga = googleMap.addMarker(new MarkerOptions()
-                .position(ESTGA)
-                .title("ESTGA"));
-        marker_estga.setTag(0);*/
 
         googleMap.addMarker(new MarkerOptions()
                 .position(place2.getLatLng())
@@ -165,32 +161,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     }
 
-    /*public LatLng getMylocation() {
-        FusedLocationProviderClient client = LocationServices.getFusedLocationProviderClient(this);
-
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                    this,
-                    new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION},
-                    Support.MY_PERMISSION_ACCESS_COURSE_LOCATION
-            );
-        }
-        @SuppressLint("MissingPermission") Task<Location> task = client.getLastLocation();
-        task.addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                System.out.println("1");
-
-                mylocation = new LatLng(location.getLatitude(), location.getLongitude());
-
-            }
-        });
-        if(mylocation==null){
-            mylocation= new LatLng(0,0);
-        }
-        return mylocation;
-    }*/
-
     /**
      * Prompts the user for permission to use the device location.
      */
@@ -233,9 +203,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                             if (lastKnownLocation != null) {
                                 mylocation = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude());
                                 Log.d(TAG, "mylocation -> " + mylocation);
-                                /*mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
-                                        new LatLng(lastKnownLocation.getLatitude(),
-                                                lastKnownLocation.getLongitude()), DEFAULT_ZOOM));*/
                             } else {
                                 mylocation = defaultLocation;
                             }
@@ -298,24 +265,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 startActivity(mapIntent);
             }
 
-            /*String uri = "https://www.google.pt/maps/dir/"+ESTGA+"/38.7436883,-9.1952226";
-            System.out.println(uri);
-
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-            mapIntent.setPackage("com.google.android.apps.maps");
-
-            if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(mapIntent);
-            }*/
-
             /*String ESTGA = "40.5745066,-8.4438357";
-             *//* Create and Uri. Make the Intent. Start an activity that can handle the Intent  *//*
-            Uri gmmIntentUri = Uri.parse("geo:"+ESTGA+"?z=10&q=parking");
-            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-            mapIntent.setPackage("com.google.android.apps.maps");
-            if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(mapIntent);
-            }*/
+             *//* Create and Uri. Make the Intent. Start an activity that can handle the Intent  */
         }
 
         // Return false to indicate that we have not consumed the event and that we wish
@@ -333,23 +284,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         onMarkerClick(marker);
 
-        /*LinearLayout layout = new LinearLayout(this);
-        layout.setPadding(20,20,20,20);
-        layout.setBackgroundColor(Color.GRAY);
-
-        TextView tv_info = new TextView(this);
-        tv_info.setText(Html.fromHtml("<b>"+marker.getTitle()+"</b>"+marker.getSnippet()));
-
-        Button btn_nav = new Button(this);
-        btn_nav.setText("Navigate");
-        btn_nav.setBackgroundColor(Color.RED);*/
-
-        /*btn_nav.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent info_activity = new Intent(AboutActivity.this, InfoActivity.class);
-                startActivity(info_activity);
-            }
-        });*/
         //mMap.setOnMarkerClickListener(this);
     }
 

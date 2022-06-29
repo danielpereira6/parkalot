@@ -28,11 +28,6 @@ public class AboutActivity extends AppCompatActivity {
         Double long_coords = intent.getDoubleExtra("long_coords", -8);
 
         Bundle bundle = intent.getExtras();
-        /*if (bundle != null) {
-            for (String key : bundle.keySet()) {
-                Log.e(TAG, "Extra Keys -> "+ key + " : " + (bundle.get(key) != null ? bundle.get(key) : "NULL"));
-            }
-        }*/
         if (bundle != null) {
             lat_coords = new Double(bundle.get("lat_coords").toString());
             long_coords = new Double(bundle.get("long_coords").toString());

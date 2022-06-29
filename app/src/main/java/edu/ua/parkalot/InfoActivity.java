@@ -70,8 +70,6 @@ public class InfoActivity extends AppCompatActivity {
 
                 src = park.getImg();
                 if (src != null || src != "") {
-                    /*uri = Uri.parse(src);
-                    park_image.setImageURI(uri);*/
                     // For a simple view:
                     Glide.with(this).load(src).into(park_image);
                 }
